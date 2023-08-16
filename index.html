@@ -22,16 +22,16 @@
         <div class="logo">My Portfolio</div>
     </nav>
     <div class="hamburger-menu">
-        <div class="hambuger-icon">
+        <div class="hambuger-icon" onclick="toggleMenu()">
             <span></span>
             <span></span>
             <span></span>
         </div>
         <div class="menu-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
 
         </div>
     </div>
@@ -113,6 +113,7 @@
     <footer>
         <p>Copyright &#169; 2023 Bernice Uwituze</p>
     </footer>
+    <script src="main.js"></script>
     
 </body>
 </html>
