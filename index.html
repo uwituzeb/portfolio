@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
 <body>
-        <nav class="hero">
+        <nav class="desktop">
             <div class="logo">My Portfolio</div>
             <div>
                 <ul class="nav-links">
@@ -21,21 +21,21 @@
     </nav>
     <nav class="hamburger">
         <div class="logo">My Portfolio</div>
-    </nav>
-    <div class="hamburger-menu">
-        <div class="hambuger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <div class="menu-links">
-            <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <div class="hamburger-menu">
+            <div class="hambuger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
 
+            </div>
         </div>
-    </div>
+    </nav>
 
     <section class="profile">
         <div class="section-image-container">
@@ -81,25 +81,31 @@
     </section>
 
     <section class="projects">
-        <p>Browse My Recent</p>
-        <h1>Projects</h1>
-        <img class="project-image" src="" alt="url shortening app">
-        <h3>Url-shortening website</h3>
-        <div class="btn-container">
-            <button class="project-btn">
-                Github
-            </button>
-            <button class="project-btn">
-                Live Demo
-            </button>
-
-            <img class="project-image" src="" alt="weather app">
-            <h3>Weather api website</h3>
-            <div class="btn-container">
-                <button class="project-btn">
+        <p class="section-text-p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="article-container">
+                    <img class="project-image" src="images/url-shortener.JPG" alt="url shortening app">
+                </div>
+                <h3 class="experience-sub-title project-title">Url-shortening website</h3>
+                <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/berniceu/url-shortening-api'">
                     Github
                 </button>
-                <button class="project-btn">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://berniceu.github.io/url-shortening-api/'">
+                    Live Demo
+                </button>
+                </div>
+            </div>
+
+            <img class="project-image" src="images/weather.JPG" alt="weather app">
+            <h3>Weather api website</h3>
+            <div class="btn-container">
+                <button class="project-btn" onclick="location.href='https://github.com/berniceu/weather-app.git'">
+                    Github
+                </button>
+                <button class="project-btn" onclick="location.href='https://berniceu.github.io/weather-app/'">
                     Live Demo
                 </button>
         </div>

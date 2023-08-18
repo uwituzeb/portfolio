@@ -225,7 +225,21 @@ section{
 .btn-container {
   gap: 1rem;
 }
+/*projects section*/
+.projects{
+    position: relative;
+}
 
+.project-image{
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-btn{
+    color: black;
+    border-color: rgb(163, 163, 163);
+}
 
 footer{
     height: 26vh;
