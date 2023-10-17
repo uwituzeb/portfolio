@@ -1,18 +1,10 @@
-/*@media screen and (max-width: 1400px){
-    .profile{
-        height: 83vh;
-        margin-bottom: 6rem;
-    }
 
-    
-}*/
-
-@media  screen and(max-width: 1200px) {
-    .desktop{
+@media  screen and (max-width: 1200px) {
+    .desktop-nav{
         display: none;
     }
 
-    .hamburger{
+    .hamburger-nav{
         display: flex;
     }
     
