@@ -146,11 +146,12 @@ a:hover{
 section{
     padding-top: 4vh;
     height: 96vh;
-    margin: 0 10 rem;
+    margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
 
+/*profile section */
 .profile{
     display: flex;
     justify-content: center;
@@ -163,12 +164,17 @@ section{
     height: 400px;
     width: 400px;
     margin: auto 0;
+
+}
+
+.section-image-container img{
+    border-radius: 50%;
 }
 
 .section-text{
     align-self: center;
     text-align: center;
-    font-weight: 600;
+    font-weight: 600px;
 }
 
 
@@ -180,6 +186,8 @@ section{
     font-size: 1.75rem;
     margin-bottom: 1rem;
 }
+
+/* about section */
 
 .title{
     font-size: 3rem;
@@ -247,9 +255,31 @@ section{
 .btn-container {
   gap: 1rem;
 }
+
+/*skills section*/
+
+.skills-images{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.skills-images img{
+    width: 100px;
+    
+}
 /*projects section*/
 .projects{
     position: relative;
+}
+
+.project-details-container{
+    display: flex;
+}
+
+.color-container{
+    border-color: rgb(163, 163, 163);
+    background: rgb(250, 250, 250);
 }
 
 .project-image{
@@ -257,6 +287,7 @@ section{
     width: 90%;
     height: 90%;
 }
+
 
 .project-btn{
     color: black;
