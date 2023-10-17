@@ -28,11 +28,12 @@
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
@@ -46,12 +47,17 @@
             <h1 class="title">Bernice Uwituze</h1>
             <p class="section-text-p2">A Frontend Developer</p>
             <div class="btn-container">
-                <button class="btn btn-color-1">Download CV</button>
-                <button class="btn btn-color-2">Contact Info</button>
+                <button class="btn btn-color-1"
+                onclick="window.open('./assets/Bernice-Uwituze-CV.pdf')"
+                >Download CV</button>
+
+                <button class="btn btn-color-2"
+                onclick="window.open('/#contact')"
+                >Contact Info</button>
             </div>
             <div class="socials-container">
-                <img class="icon" src="images/linkedin.png" alt="LinkedIn">
-                <img class="icon" src="images/github.png" alt="github">
+                <img class="icon" src="images/linkedin.png" alt="LinkedIn" onclick="location.href='https://linkedin.com/in/bernice-uwituze'">
+                <img class="icon" src="images/github.png" alt="github" onclick="location.href='https://github.com/berniceu'">
             </div>
         </div>
     </section>
@@ -71,20 +77,22 @@
 
     </section>
     <section id="skills" class="skills">
-        <p>Explore My</p>
-        <h3>Experience</h3>
-        <img src="" alt="HTML5">
-        <img src="" alt="CSS">
-        <img src="" alt="JavaScript">
-        <img src="" alt="BootStrap">
-        <img src="" alt="Linux">
+        <p class="section-text-p1">Explore My</p>
+        <h3 class="title">Skills</h3>
+        <div class="skills-images">
+            <img src="images/HTML5.png" alt="HTML5">
+            <img src="images/CSS.png" alt="CSS">
+            <img src="images/js.png" alt="JavaScript">
+            <img src="images/bootstrap.png" alt="BootStrap">
+            <img src="images/PYTHON.png" alt="Python">
+        </div>
     </section>
 
     <section id="projects" class="projects">
         <p class="section-text-p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
+        <div class="project-details-container">
+            <div class="details-container color-container">
                 <div class="article-container">
                     <img class="project-image" src="images/url-shortener.JPG" alt="url shortening app" >
                 </div>
@@ -98,16 +106,19 @@
                 </button>
                 </div>
             </div>
-
-            <img class="project-image" src="images/weather.JPG" alt="weather app">
-            <h3>Weather app</h3>
-            <div class="btn-container">
-                <button class="project-btn" onclick="location.href='https://github.com/berniceu/weather-app.git'">
-                    Github
-                </button>
-                <button class="project-btn" onclick="location.href='https://berniceu.github.io/weather-app/'">
-                    Live Demo
-                </button>
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <img class="project-image" src="images/weather.JPG" alt="weather app">
+                </div>
+                <h3 class="experience-sub-title project-title">Weather app</h3>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/berniceu/weather-app.git'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://berniceu.github.io/weather-app/'">
+                        Live Demo
+                    </button>
+            </div>
         </div>
     </section>
 
