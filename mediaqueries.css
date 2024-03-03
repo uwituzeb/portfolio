@@ -1,13 +1,59 @@
 
-@media  screen and (max-width: 1200px) {
-    .desktop-nav{
-        display: none;
-    }
+@media screen and (max-width: 1024px) {
 
-    .hamburger-nav{
+    .hamburger-btn {
         display: flex;
     }
+   
+
+    .container{
+        display: none;
+        
+    }
+    .header h1 {
+        display: block;
+    }
+
+    .home-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
     
+
+    .about-container{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 4rem;
+
+    }
+
     
 }
+
+@media screen and (max-width: 767px){
+    main{
+        width: 100%;
+        
+    }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    body{
+        font-size: 15px;
+    }
+
     
+
+    .description{
+        width: 80%;
+        margin: auto;
+    }
+}
