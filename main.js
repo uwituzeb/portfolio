@@ -15,3 +15,4 @@ hamburgerBtn.addEventListener('click', () => {
         hamburgerButton.innerHTML = '☰';
         hamburgerBtn.innerHTML = '☰';
     }
+})
